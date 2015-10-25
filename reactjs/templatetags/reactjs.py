@@ -23,6 +23,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 from django import template
 from django.utils.encoding import iri_to_uri
+from django.utils.safestring import mark_safe
 from reactjs import conf as settings
 
 def is_installed(module):
@@ -42,7 +43,7 @@ MINIFIED = ".min" if settings.MINIFIED else ""
 
 
 def _reactjs(script, context, version=settings.VERSION, minified=MINIFIED):
-    return """<script type="text/javascript" src="{react}"></script>
+    return mark_safe("""<script type="text/javascript" src="{react}"></script>
 <script type="text/javascript" src="{reactdom}"></script>""".format(
         reactdom=_static(iri_to_uri(
             "reactjs/{script}-{version}{minified}.js".format(
@@ -58,7 +59,7 @@ def _reactjs(script, context, version=settings.VERSION, minified=MINIFIED):
                 minified=minified,
             )
         )),
-    )
+    ))
 
 
 @register.simple_tag(takes_context=True, name="reactjs")
