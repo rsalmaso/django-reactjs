@@ -25,7 +25,7 @@ from os.path import abspath, dirname, join
 from django.conf import settings as djsettings
 
 
-VERSION = "0.14.2"
+VERSION = "0.14.3"
 JS_ROOT = getattr(djsettings, "REACTJS_ROOT", abspath(join(dirname(__file__), "static/reactjs")))
 DEBUG = getattr(djsettings, "DEBUG")
 MINIFIED = getattr(djsettings, "REACTJS_MINIFIED", not DEBUG)
