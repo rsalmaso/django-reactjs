@@ -70,3 +70,8 @@ def tag_reactjs(context, version=settings.VERSION, minified=MINIFIED):
 @register.simple_tag(takes_context=True, name="reactjs_with_addons")
 def tag_reactjs_with_addons(context, version=settings.VERSION, minified=MINIFIED):
     return _reactjs("react-with-addons", context=context, version=version, minified=minified)
+
+
+@register.simple_tag(takes_context=True, name="reactjs_dom_server")
+def tag_reactjs_dom_server(context, version=settings.VERSION, minified=MINIFIED):
+    return _reactjs("react-dom-server", context=context, version=version, minified=minified)
