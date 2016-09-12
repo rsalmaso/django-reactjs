@@ -39,3 +39,4 @@ Include the reactjs-with-addons file(s) as `<scrip...></script>` tag(s).
 
 * renamed reactjs.apps.Config to reactjs.apps.ReactJSConfig
 * update to reactjs 15.3.1
+* removed python2 support
