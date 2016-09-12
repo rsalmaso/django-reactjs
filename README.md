@@ -34,7 +34,7 @@ Include the reactjs-with-addons file(s) as `<scrip...></script>` tag(s).
 
 ### CHANGES ###
 
-0.x.y
+0.4.0
 =====
 
 * renamed reactjs.apps.Config to reactjs.apps.ReactJSConfig
