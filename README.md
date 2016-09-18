@@ -29,7 +29,7 @@ Include the reactjs file(s) as `<scrip...></script>` tag(s).
 Include the reactjs-with-addons file(s) as `<scrip...></script>` tag(s).
 ```
 #!html
-{% reactjs-with-addons %}
+{% reactjs_with_addons %}
 ```
 
 ### CHANGES ###
