@@ -34,6 +34,12 @@ Include the reactjs-with-addons file(s) as `<scrip...></script>` tag(s).
 
 ### CHANGES ###
 
+0.4.1
+=====
+
+* update to reactjs 15.3.2
+* update README
+
 0.4.0
 =====
 
