@@ -1,3 +1,6 @@
+*THIS MODULE IS DEPRECATED*
+
+
 # django-reactjs #
 A simple templatetag to load reactjs libraries.
 
